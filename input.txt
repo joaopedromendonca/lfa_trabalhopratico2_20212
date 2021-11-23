@@ -1,4 +1,5 @@
 S => XB | AB
 X => AS
+B => c
 A => a
 B => b
