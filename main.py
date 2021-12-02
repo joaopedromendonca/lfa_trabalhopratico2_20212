@@ -33,7 +33,6 @@ def formata_input(inputf) -> dict:
             [g_dict[sym_split].append(x) for x in new_rsplit]
         else:
             g_dict[sym_split] = new_rsplit
-        # print(f"{sym_split} : {new_rsplit}")
     return(g_dict)
 
 
@@ -43,3 +42,4 @@ if __name__ == "__main__":
         file_input = file.readlines()
         gram = Gramatica(formata_input(file_input))
         gram.imprime()
+        print(ord(gram.simbolos['A'][0]), ord('z'), ord('Z'), ord('.') , chr(96))
