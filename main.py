@@ -62,7 +62,7 @@ def cyk(gramatica : Gramatica, palavra : str):
     # segunda etapa, redução dos terminais
 
     tabela = [linha_1]
-
+    
     # percorre a tabela
     for i in range(len(palavra)-1):
         
@@ -79,9 +79,6 @@ def cyk(gramatica : Gramatica, palavra : str):
                 for r in gramatica.regras:
                     if _r in gramatica.regras[r]:
                         sim_list.append(r)
-
-            if sim_list == []:
-                sim_list.append(ultima_linha[n])
 
             nova_linha.append(sim_list)
 
