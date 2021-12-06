@@ -1,9 +1,3 @@
-class Simbolo_NT:
-
-    def __init__(self, _nome : str):
-        self.nome = _nome
-        self.regras = []
-
 class Gramatica:
 
     def __init__(self, _simbolos : dict):
