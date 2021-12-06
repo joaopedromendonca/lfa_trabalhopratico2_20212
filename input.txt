@@ -1,5 +1,5 @@
 S => XB | AB
 X => AS
 B => c
-A => a
+A => a | b 
 B => b
