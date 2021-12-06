@@ -85,6 +85,10 @@ def cyk(gramatica : Gramatica, palavra : str):
         tabela.append(nova_linha)
     
     print(tabela)
+    for s in tabela[-1]:
+        if 'S' in s:
+            return True
+    return False
 
 
 def combina(l1 :list , l2:list):
@@ -100,4 +104,4 @@ if __name__ == "__main__":
         file_input = file.readlines()
         gram = Gramatica(formata_input(file_input))
         gram.imprime()
-        cyk(gram,'bacc')
+        print(cyk(gram,'ab'))
